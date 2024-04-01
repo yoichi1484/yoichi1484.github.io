@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I presented our paper [Evaluating the Robustness of Discrete Prompts](https://arxiv.org/abs/2302.05619) at [EACL 2023](https://2023.eacl.org).
+Our paper  [Evaluating the Robustness of Discrete Prompts](https://arxiv.org/abs/2302.05619) has been accepted to  [EACL 2023](https://2023.eacl.org) 🎉
