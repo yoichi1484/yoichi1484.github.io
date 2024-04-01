@@ -16,6 +16,7 @@
   biburl       = {https://dblp.org/rec/journals/corr/abs-2309-11852.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org},
   pdf = {https://arxiv.org/abs/2309.11852},
+  code = {https://github.com/yoichi1484/knowledge-sanitization},
   preview={paper_2023b.jpg},
   selected={true}
 }
@@ -50,10 +51,10 @@
                   Sho Yokoi and
                   Katsuhito Sudoh and
                   Satoshi Nakamura},
-  title        = {Beyond Vectors: Subspace Representations for Set Operations of Embeddings},
-  journal      = {arXiv},
+  title        = {Subspace Representations for Soft Set Operations and Sentence Similarities},
+  journal      = {NAACL},
   volume       = {abs/2210.13034},
-  year         = {2022},
+  year         = {2024},
   url          = {https://doi.org/10.48550/arXiv.2210.13034},
   doi          = {10.48550/ARXIV.2210.13034},
   eprinttype    = {arXiv},
@@ -61,7 +62,7 @@
   timestamp    = {Fri, 28 Oct 2022 14:21:57 +0200},
   biburl       = {https://dblp.org/rec/journals/corr/abs-2210-13034.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org},
-  abstract = {In natural language processing (NLP), the role of embeddings in representing linguistic semantics is crucial. Despite the prevalence of vector representations in embedding sets, they exhibit limitations in expressiveness and lack comprehensive set operations. To address this, we attempt to formulate and apply sets and their operations within pre-trained embedding spaces. Inspired by quantum logic, we propose to go beyond the conventional vector set representation with our novel subspace-based approach. This methodology constructs subspaces using pre-trained embedding sets, effectively preserving semantic nuances previously overlooked, and consequently consistently improving performance in downstream tasks.},
+  abstract = {In the field of natural language processing (NLP), continuous vector representations are crucial for capturing the semantic meanings of individual words. Yet, when it comes to the representations of sets of words, the conventional vector-based approaches often struggle with expressiveness and lack the essential set operations such as union, intersection, and complement. Inspired by quantum logic, we realize the representation of word sets and corresponding set operations within pre-trained word embedding spaces. By grounding our approach in the linear subspaces, we enable efficient computation of various set operations and facilitate the soft computation of membership functions within continuous spaces. Moreover, we allow for the computation of the F-score directly within word vectors, thereby establishing a direct link to the assessment of sentence similarity. In experiments with widely-used pre-trained embeddings and benchmarks, we show that our subspace-based set operations consistently outperform vector-based ones in both sentence similarity and set retrieval tasks. },
   pdf = {https://arxiv.org/abs/2210.13034},
   code = {https://github.com/yoichi1484/subspace},
   preview={paper_2022a.jpg}
