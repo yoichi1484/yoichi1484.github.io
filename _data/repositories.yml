@@ -1,6 +1,8 @@
 github_users:
 
 github_repos:
+  - tsukushiAI/self-organized-agent
+  - yoichi1484/knowledge-sanitization
   - LivNLP/prompt-robustness
   - yoichi1484/subspace
   - ahclab/reflection 
