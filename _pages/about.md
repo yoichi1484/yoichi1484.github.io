@@ -17,10 +17,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Yoichi Ishibashi is a Researcher at Kyoto University. 
+Yoichi Ishibashi is a Researcher at NEC. 
 
-He received a bachelor's degree from [Kyoto Sangyo University](https://www.kyoto-su.ac.jp/index-e.html), Kyoto, Japan, in 2018, and master's and Ph.D. degrees from [Nara Institute of Science and Technology (NAIST)](https://www.naist.jp/en) in 2020 and 2023, respectively. 
-
-His research interests include `Natural Language Processing` (NLP), `Large Language Models` (LLMs), `Prompt Learning`, and `LLM Agent`.
+ My research interests include `Natural Language Processing` (NLP), `Large Language Models` (LLMs), `Prompt Learning`, and `LLM Agent`.
 
 For more details, please refer to my [CV](./assets/pdf/cv.pdf).
