@@ -19,6 +19,6 @@ social: true  # includes social icons at the bottom of the page
 
 Yoichi Ishibashi is a Researcher at NEC. 
 
- My research interests include `Natural Language Processing` (NLP), `Large Language Models` (LLMs), and `LLM Agent`.
+My research interest lies in `NLP`, `LLMs`, `Prompt Engineering`, `Coding Agents`, and `Self-Evolving LLMs`.
 
 For more details, please refer to my [CV](./assets/pdf/cv.pdf).
