@@ -1,14 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
-
-repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - tsukushiAI/self-organized-agent
+  - yoichi1484/knowledge-sanitization
+  - LivNLP/prompt-robustness
+  - yoichi1484/subspace
+  - ahclab/reflection 
+  - yoichi1484/sake_embedding 
+  - yoichi1484/sake_dataset 
