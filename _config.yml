@@ -86,7 +86,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: "" # blog_name will be displayed in your blog page
+blog_name: "Blog" # blog_name will be displayed in your blog page
 blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
@@ -128,24 +128,6 @@ external_sources:
     posts:
       - url: https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/
         published_date: 2024-05-14
-
-# -----------------------------------------------------------------------------
-# 追加
-# -----------------------------------------------------------------------------
-# ─────────────────────────────────────────
-# Project を非表示に
-project_name: ""         # 空文字にする
-projects: []             # 念のためリストも空に
-
-# ─────────────────────────────────────────
-# Teaching を非表示に
-teaching_name: ""        # 空文字にする
-teachings: []            # リストも空に
-
-# ─────────────────────────────────────────
-# People を非表示に
-people_name: ""          # 空文字にする
-peoples: []              # リストも空に
 
 # -----------------------------------------------------------------------------
 # Newsletter
