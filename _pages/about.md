@@ -27,7 +27,7 @@ latest_posts:
 
 Yoichi Ishibashi is a Researcher at NEC. 
 
-My research interest lies in `LLMs`, `Coding Agents`, and `Self-Evolving LLMs`.
+My research interest lies in `LLMs`, `Coding Agents`, and `Self-Improving LLMs`.
 
 For more details, please refer to my [CV](./assets/pdf/cv.pdf).
 
