@@ -1,6 +1,20 @@
 ---
 ---
 
+@article{yano-etal-2025-lamdagent,
+  title={LaMDAgent: An Autonomous Framework for Post-Training Pipeline Optimization via LLM Agents},
+  author       = {Taro Yano and
+                  Yoichi Ishibashi and
+                  Masafumi Oyamada},
+  journal      = {EMNLP},
+  volume       = {abs/2505.21963},
+  year         = {2025},
+  abstract = "Large Language Models (LLMs) excel across diverse tasks, with post-training methods like Supervised Fine-Tuning (SFT), Preference Learning, and Model Merging enabling effective domain and task adaptation. While outcomes can vary with data orderings or component combinations, yet manual pipeline optimization is costly and labor-intensive. Existing approaches typically rely on manual design or focus narrowly on optimizing individual components, such as data ordering or merging parameters. We propose LaMDAgent, an LLM Agent-driven framework that autonomously constructs and optimizes end-to-end post-training pipelines by exploring various model improving methods, objects, and their applied orderings based on task-based feedback. LaMDAgent achieves a 9.0-point gain in tool-use accuracy without degrading instruction-following, and identifies high-performing strategies overlooked by manual design.We further analyze the impact of data and model scaling to reduce computational costs on the exploration, finding that model size scalings introduces new challenges, whereas scaling data size enables cost-effective pipeline discovery.",
+  pdf          = {https://arxiv.org/abs/2505.21963},
+  preview={paper_2025b.png},
+  selected={true}
+}
+
 @article{ishibashi2025mining,
   title={Mining Hidden Thoughts from Texts: Evaluating Continual Pretraining with Synthetic Data for LLM Reasoning},
   author={Ishibashi, Yoichi and Yano, Taro and Oyamada, Masafumi},
@@ -8,6 +22,7 @@
   volume       = {abs/2505.10182},
   year         = {2025},
   pdf          = {https://arxiv.org/abs/2505.10182},
+  abstract ="Large Language Models (LLMs) have demonstrated significant improvements in reasoning capabilities through supervised fine-tuning and reinforcement learning. However, when training reasoning models, these approaches are primarily applicable to specific domains such as mathematics and programming, which imposes fundamental constraints on the breadth and scalability of training data. In contrast, continual pretraining (CPT) offers the advantage of not requiring task-specific signals. Nevertheless, how to effectively synthesize training data for reasoning and how such data affect a wide range of domains remain largely unexplored. This study provides a detailed evaluation of Reasoning CPT, a form of CPT that uses synthetic data to reconstruct the hidden thought processes underlying texts, based on the premise that texts are the result of the author's thinking process. Specifically, we apply Reasoning CPT to Gemma2-9B using synthetic data with hidden thoughts derived from STEM and Law corpora, and compare it to standard CPT on the MMLU benchmark. Our analysis reveals that Reasoning CPT consistently improves performance across all evaluated domains. Notably, reasoning skills acquired in one domain transfer effectively to others; the performance gap with conventional methods widens as problem difficulty increases, with gains of up to 8 points on the most challenging problems. Furthermore, models trained with hidden thoughts learn to adjust the depth of their reasoning according to problem difficulty.",
   preview={paper_2025a.jpg},
   selected={true}
 }
@@ -20,6 +35,7 @@
   journal      = {NAACL},
   volume       = {abs/2410.15639},
   year         = {2025},
+  abstract = "Recent advancements in automatic code generation using large language model (LLM) agent have brought us closer to the future of automated software development. However, existing single-agent approaches face limitations in generating and improving large-scale, complex codebases due to constraints in context length. To tackle this challenge, we propose Self-Organized multi-Agent framework (SoA), a novel multi-agent framework that enables the scalable and efficient generation and optimization of large-scale code. In SoA, self-organized agents operate independently to generate and modify code components while seamlessly collaborating to construct the overall codebase. A key feature of our framework is the automatic multiplication of agents based on problem complexity, allowing for dynamic scalability. This enables the overall code volume to be increased indefinitely according to the number of agents, while the amount of code managed by each agent remains constant. We evaluate SoA on the HumanEval benchmark and demonstrate that, compared to a single-agent system, each agent in SoA handles significantly less code, yet the overall generated code is substantially greater. Moreover, SoA surpasses the powerful single-agent baseline by 5\% in terms of Pass@1 accuracy.",
   pdf          = {https://arxiv.org/abs/2410.15639},
   preview={paper_2024b.jpg},
   selected={true}
