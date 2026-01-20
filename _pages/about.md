@@ -25,7 +25,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a researcher at NEC Corporation (Data Science Research Laboratories, Generative AI Group). My research interests lie in <span style="color: #FF8C00;">coding agents</span> and <span style="color: #FF8C00;">self-improving LLMs</span>. I believe the most economically valuable application of AI is automating technological development itself, and I have been conducting research toward this goal. In recent years, I have worked on:
+I am a researcher at [NEC Corporation](https://www.nec.com/en/global/rd/index.html) (Data Science Research Laboratories, Generative AI Group). My research interests lie in <span style="color: #FF8C00;">coding agents</span> and <span style="color: #FF8C00;">self-improving LLMs</span>. I believe the most economically valuable application of AI is automating technological development itself, and I have been conducting research toward this goal. In recent years, I have worked on:
 
 - [a scalable multi-agent system that distributes context to address context length limitations](https://arxiv.org/abs/2404.02183)
 - [a training method where LLMs iteratively discover algorithms and use reinforcement learning to find superior ones](https://arxiv.org/abs/2410.15639) (NAACL 2025)
