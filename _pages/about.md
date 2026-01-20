@@ -7,7 +7,7 @@ subtitle: Japanese/石橋陽一 he/him
 profile:
   align: right
   image: profile.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p></p>
 
