@@ -21,7 +21,7 @@ ninja.data = [{
           description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/assets/pdf/cv.pdf";
+            window.location.href = "/https:/yoichi1484.github.io/assets/pdf/cv.pdf";
           },
         },{id: "nav-repositories",
           title: "Repositories",
