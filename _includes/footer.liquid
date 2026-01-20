@@ -12,13 +12,13 @@
 {% endcapture %}
 
 {% if site.footer_fixed %}
-  <footer class="fixed-bottom" role="contentinfo" style="background-color: rgba(255, 255, 255, 0.9);">
+  <footer class="fixed-bottom" role="contentinfo" style="background-color: var(--global-bg-color);">
     <div class="container mt-0">
       {{ footer_contents }}
     </div>
   </footer>
 {% else %}
-  <footer class="sticky-bottom mt-5" role="contentinfo" style="background-color: rgba(255, 255, 255, 0.9);">
+  <footer class="sticky-bottom mt-5" role="contentinfo" style="background-color: var(--global-bg-color);">
     {% if site.newsletter.enabled %}
       {% include newsletter.liquid %}
     {% endif %}
