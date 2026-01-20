@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper [Mining Hidden Thoughts from Texts: Evaluating Continual Pretraining with Synthetic Data for LLM Reasoning](https://www.alphaxiv.org/abs/2505.10182) has been published on arXiv.
+Our paper [Mining Hidden Thoughts from Texts: Evaluating Continual Pretraining with Synthetic Data for LLM Reasoning](https://www.alphaxiv.org/abs/2505.10182) is available on arXiv.

@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Our paper, titled [Knowledge Sanitization of Large Language Models](https://arxiv.org/abs/2309.11852), has been published on arXiv.
+Our paper, titled [Knowledge Sanitization of Large Language Models](https://arxiv.org/abs/2309.11852), is available on arXiv.
  

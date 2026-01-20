@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper [Can Large Language Models Invent Algorithms to Improve Themselves?](https://arxiv.org/abs/2410.15639) has been published on arXiv.
+Our paper [Can Large Language Models Invent Algorithms to Improve Themselves?](https://arxiv.org/abs/2410.15639) is available on arXiv.
