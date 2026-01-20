@@ -9,17 +9,17 @@
   color: "#009f36"
 
 "EMNLP":
-  color: "#95E1D3"
+  color: "#2196F3"
   url: https://2025.emnlp.org/
 
 "NAACL":
-  color: "#95E1D3"
+  color: "#2196F3"
   url: https://2025.naacl.org/
 
 "EACL":
-  color: "#95E1D3"
+  color: "#2196F3"
   url: https://2023.eacl.org/
 
 "arXiv":
-  color: "#95E1D3"
+  color: "#2196F3"
   url: https://arxiv.org/
