@@ -122,13 +122,6 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/yoichi-ishibashi-linkdin/", "_blank");
         },
       },{
-        id: 'social-orcid',
-        title: 'ORCID',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://orcid.org/0000-0001-9901-6878", "_blank");
-        },
-      },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
