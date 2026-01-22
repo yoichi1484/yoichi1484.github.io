@@ -129,25 +129,11 @@ ninja.data = [{
           window.open("https://orcid.org/0000-0001-9901-6878", "_blank");
         },
       },{
-        id: 'social-rss',
-        title: 'RSS Feed',
-        section: 'Socials',
-        handler: () => {
-          window.open("/feed.xml", "_blank");
-        },
-      },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
           window.open("https://scholar.google.com/citations?user=7JsG0KUAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-semanticscholar',
-        title: 'Semantic Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.semanticscholar.org/author/2059148476", "_blank");
         },
       },{
         id: 'social-x',
