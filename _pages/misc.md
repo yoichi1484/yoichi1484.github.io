@@ -1,13 +1,11 @@
 ---
 layout: page
 permalink: /misc/
-title: misc
+title: Misc
 description: Personal interests and hobbies
 nav: true
 nav_order: 8
 ---
-
-## My Leopard Geckos
 
 <div class="row mt-3">
   <div class="col-sm-4 mt-3 mt-md-0">
