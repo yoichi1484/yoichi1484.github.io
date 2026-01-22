@@ -31,7 +31,7 @@ ninja.data = [{
             window.location.href = "/repositories/";
           },
         },{id: "nav-misc",
-          title: "misc",
+          title: "Misc",
           description: "Personal interests and hobbies",
           section: "Navigation",
           handler: () => {
