@@ -1,0 +1,40 @@
+// Gecko Animation Styles
+
+.gecko-animation {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+  z-index: 1000;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  animation: gecko-walk 500ms steps(5) infinite;
+}
+
+@keyframes gecko-walk {
+  0% {
+    background-image: url('/assets/img/frame1.png');
+  }
+  20% {
+    background-image: url('/assets/img/frame2.png');
+  }
+  40% {
+    background-image: url('/assets/img/frame3.png');
+  }
+  60% {
+    background-image: url('/assets/img/frame4.png');
+  }
+  80% {
+    background-image: url('/assets/img/frame5.png');
+  }
+  100% {
+    background-image: url('/assets/img/frame1.png');
+  }
+}
