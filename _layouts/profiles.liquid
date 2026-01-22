@@ -15,7 +15,12 @@ layout: page
               {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
             {% endif %}
             {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+            <div class="profile-image-container">
+              {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
+              <video class="profile-video {% if profile.image_circular %}rounded-circle{% else %}rounded{% endif %}" autoplay loop muted playsinline>
+                <source src="{{ '/assets/video/anime.webm' | relative_url }}" type="video/webm">
+              </video>
+            </div>
           {% endif %}
           {% if profile.more_info %}
             <div class="more-info">{{ profile.more_info }}</div>
