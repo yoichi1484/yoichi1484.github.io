@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-misc",
           title: "Misc",
-          description: "I keep leopard geckos.",
+          description: "I keep a leopard gecko as a pet. As of 2026, she&#39;s three years old.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/misc/";
