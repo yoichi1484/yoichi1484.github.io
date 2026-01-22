@@ -2,7 +2,7 @@
 layout: page
 permalink: /misc/
 title: Misc
-description: I keep a leopard gecko as a pet. As of 2026, it's three years old.
+description: I keep a leopard gecko as a pet. As of 2026, she's three years old.
 nav: true
 nav_order: 8
 ---
