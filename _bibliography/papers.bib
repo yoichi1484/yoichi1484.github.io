@@ -11,7 +11,20 @@
   year         = {2026},
   abstract = "AlphaEvolve and FunSearch have demonstrated the potential of combining large language models (LLMs) with evolutionary search for automated algorithm discovery. However, discovery success is shaped not only by model capability but also significantly by the design of the execution infrastructure, i.e., the harness. This paper investigates effective harness design through three questions: under a fixed token budget, is it better to produce many algorithms with brief thought or fewer algorithms with deeper thought? How should the harness handle evaluation hacks, where generated programs exploit the scoring function? And how can agents that require full filesystem access execute safely in parallel? Using Vesper, an algorithm discovery framework that incorporates harness improvements addressing these questions, we evaluate on Circle Packing under the same token budget. Interestingly, generating fewer algorithms while thinking more deeply about each one achieved higher scores. That is, scaling the quality of each individual is more budget-efficient than scaling the number of evolutionary generations. Surprisingly, more capable models produced evaluation hacks at higher rates, making hack detection increasingly necessary as models scale.",
   pdf          = {https://arxiv.org/abs/2605.15221},
+  preview={paper_2026a.png},
   abbr={ICML WS},
+  selected={true}
+}
+
+@article{li2026reviewer,
+  title={Evaluating the Impact of Reviewer Guideline Design on LLM-Based Automated Peer Review},
+  author       = {Haowen Li and
+                  Yoichi Ishibashi and
+                  Masafumi Oyamada},
+  journal      = {ACL Findings},
+  year         = {2026},
+  abstract = "Peer review is an essential process in scientific research, yet the growing workload has made its automation increasingly necessary. In this study, we analyze how different types of reviewer guidelines, such as official conference guidelines and reviewer-imitating ones distilled from high-quality human reviews, affect automated peer review. Our experiments show that official conference guidelines produce review results most consistent with human judgments, suggesting that evaluation criteria refined through conference practice serve as effective guidance for automated reviewing as well. In contrast, reviewer-imitating guidelines, especially those enforcing strict rubric-style scoring, consistently degraded automated review performance, highlighting the importance of allowing subjective and holistic scoring.",
+  abbr={ACL Findings},
   selected={true}
 }
 
