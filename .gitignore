@@ -11,3 +11,10 @@ assets/libs/
 node_modules/
 vendor
 .idea
+# LaTeX build artifacts (cv/)
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.fls
+cv/*.fdb_latexmk
+cv/*.synctex.gz
