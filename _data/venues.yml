@@ -23,3 +23,11 @@
 "arXiv":
   color: "#2196F3"
   url: https://arxiv.org/
+
+"ICML WS":
+  color: "#2196F3"
+  url: https://icml.cc/
+
+"ACL Findings":
+  color: "#2196F3"
+  url: https://2026.aclweb.org/
