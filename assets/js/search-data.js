@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/https:/yoichi1484.github.io/assets/pdf/cv.pdf";
           },
+        },{id: "nav-履歴書",
+          title: "履歴書",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/https:/yoichi1484.github.io/assets/pdf/cv-ja.pdf";
+          },
         },{id: "nav-repositories",
           title: "Repositories",
           description: "",

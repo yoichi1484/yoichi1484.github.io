@@ -1,0 +1,354 @@
+% 業績書（日本語版） — 石橋 陽一
+% 英語版 cv.tex と同じレイアウト。論文・発表タイトルや会議名は英語のまま。
+% Build: lualatex cv-ja.tex  (run twice for page numbers/links)
+% Then copy cv-ja.pdf to ../assets/pdf/cv-ja.pdf and push to deploy.
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath} % provides \smash[b]
+\usepackage{luatexja}
+% 和文フォント: ヒラギノ明朝 ProN W3、太字はヒラギノ角ゴ ProN W6（macOS 標準フォント）
+\DeclareFontFamily{JY3}{hmc}{}
+\DeclareFontShape{JY3}{hmc}{m}{n}{<-> s*[0.962216] name:HiraMinProN-W3:jfm=ujis}{}
+\DeclareFontShape{JY3}{hmc}{bx}{n}{<-> s*[0.962216] name:HiraKakuProN-W6:jfm=ujis}{}
+\DeclareFontShape{JY3}{hmc}{b}{n}{<->ssub*hmc/bx/n}{}
+\DeclareFontFamily{JY3}{hgt}{}
+\DeclareFontShape{JY3}{hgt}{m}{n}{<-> s*[0.962216] name:HiraKakuProN-W3:jfm=ujis}{}
+\DeclareFontShape{JY3}{hgt}{bx}{n}{<-> s*[0.962216] name:HiraKakuProN-W6:jfm=ujis}{}
+\renewcommand{\mcdefault}{hmc}
+\renewcommand{\gtdefault}{hgt}
+\usepackage[T1]{fontenc}
+\usepackage{tgschola}
+\usepackage{geometry}
+\geometry{a4paper, left=2.5in, right=1.05in, top=0.9in, bottom=1.1in}
+\usepackage{fancyhdr}
+\usepackage[normalem]{ulem}
+\usepackage[colorlinks=true, urlcolor=blue, linkcolor=blue]{hyperref}
+\urlstyle{same}
+
+% Underline links like the Google Docs original (rule inherits link color)
+\let\oldhref\href
+\renewcommand{\href}[2]{\oldhref{#1}{\uline{#2}}}
+\renewcommand{\url}[1]{\oldhref{#1}{\uline{#1}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\scriptsize 業績書　石橋 陽一　\thepage}
+
+\setlength{\parindent}{0pt}
+% Left-aligned text without hyphenation, like the original
+\AtBeginDocument{\raggedright}
+
+\newlength{\labelcol}\setlength{\labelcol}{1.2in}
+\newlength{\labelgap}\setlength{\labelgap}{0.21in}
+
+% Section: horizontal rule + label hanging in the left margin
+% (\smash[b] keeps a multi-line label from pushing the next line down)
+\newcommand{\cvsection}[1]{%
+  \par\vspace{26pt}%
+  {\noindent\rule{\textwidth}{2.4pt}\par}\nopagebreak\vspace{9pt}%
+  \noindent\llap{\smash[b]{\parbox[t]{\labelcol}{\raggedright\large\bfseries #1}}\hspace{\labelgap}}\ignorespaces}
+
+% Bold entry heading (\entryfirst: first entry right after \cvsection, no leading gap)
+\newcommand{\entry}[1]{\par\vspace{10pt}\noindent\textbf{#1}\par\nopagebreak}
+\newcommand{\entryfirst}[1]{\textbf{#1}\par\nopagebreak}
+
+% Indented detail block under an entry
+\newenvironment{indented}{%
+  \par\nopagebreak
+  \begin{list}{}{\setlength{\leftmargin}{0.3in}\setlength{\topsep}{1pt}%
+    \setlength{\partopsep}{0pt}\setlength{\itemsep}{0pt}\setlength{\parsep}{1pt}}\item[]}{\end{list}}
+
+% Right-aligned line (awards)
+\newcommand{\awardline}[1]{{\par\raggedleft #1\par}}
+
+% Publication entry: authors / title / venue (\paperfirst: first one after \cvsection)
+\newcommand{\paper}[3]{\par\vspace{12pt}\noindent #1\\ #2\\ {\itshape #3}\par}
+\newcommand{\paperfirst}[3]{#1\\ #2\\ {\itshape #3}\par}
+
+\begin{document}
+
+% ---------- Header ----------
+\noindent\hspace*{-1.5in}\parbox{\dimexpr\textwidth+1.5in\relax}{%
+  {\huge\bfseries 石橋 陽一　博士（工学）}\hfill
+  {\textbf{最終更新：}2026年10月13日}}
+
+% ---------- Biography ----------
+\cvsection{略歴}%
+日本電気株式会社（NEC）研究員。\\
+2018年 京都産業大学 卒業。2020年 奈良先端科学技術大学院大学（NAIST）博士前期課程 修了、
+2023年 同大学 博士後期課程 修了。
+
+\vspace{8pt}
+研究分野は大規模言語モデル（LLM）、コーディングエージェント、再帰的自己改善。
+
+% ---------- Contact ----------
+\cvsection{連絡先}%
+\textbf{所属：}\href{https://www.nec.com/en/global/rd/}{日本電気株式会社}\\
+\hspace*{3em}Knowledge Science Research Laboratories\\
+\hspace*{3em}Generative AI Group\\
+\textbf{Email：}yoichi-ishibashi@nec.com\\
+\textbf{Web：}\url{https://yoichi1484.github.io/}
+
+% ---------- Education ----------
+\cvsection{学歴}%
+\entryfirst{奈良先端科学技術大学院大学 博士後期課程}
+\begin{indented}
+\href{https://ahcweb01.naist.jp/en/}{知能コミュニケーション研究室}\\
+2020年4月 -- 2023年3月（奈良）\\[3pt]
+博士（工学）\\[3pt]
+博士論文：``Semantic Operations on an Embedding Space''\\[3pt]
+指導教員：\href{https://ahcweb01.naist.jp/Prof.Nakamura/index_e.html}{中村 哲} 教授\\
+副指導教員：\href{https://www.sudoh.nl/}{須藤 克仁} 准教授
+\end{indented}
+
+\entry{奈良先端科学技術大学院大学 博士前期課程}
+\begin{indented}
+\href{https://ahcweb01.naist.jp/en/}{知能コミュニケーション研究室}\\
+2018年4月 -- 2020年3月（奈良）\\[3pt]
+修士（工学）\\[3pt]
+修士論文：``Reflection-based Word Attribute Transfer''\\[3pt]
+指導教員：\href{https://ahcweb01.naist.jp/Prof.Nakamura/index_e.html}{中村 哲} 教授\\
+副指導教員：\href{https://www.sudoh.nl/}{須藤 克仁} 准教授
+\end{indented}
+
+\entry{京都産業大学 コンピュータ理工学部}
+\begin{indented}
+2014年4月 -- 2018年3月（京都）\\[3pt]
+学士（コンピュータ理工学）\\[3pt]
+卒業論文：``Generating Responses based on Information Visually-Induced by Text Utterance''\\[3pt]
+指導教員：\href{https://researchmap.jp/read0006204}{宮森 恒} 教授\\
+学長賞（\textbf{学部首席}）
+\end{indented}
+
+% ---------- Research Interests ----------
+\cvsection{研究分野}%
+\textbf{大規模言語モデル（LLM）}、\textbf{コーディングエージェント}、\textbf{再帰的自己改善}
+
+% ---------- Research Experience ----------
+\cvsection{職歴・\\研究歴}%
+\entryfirst{研究員}
+\begin{indented}
+日本電気株式会社 Knowledge Science Research Laboratories\\
+Generative AI Group\\
+2024年4月 -- 現在\\
+研究テーマ：\href{https://arxiv.org/abs/2410.15639}{自己改善型LLM}、\href{https://arxiv.org/abs/2505.10182}{推論モデル}、\href{https://arxiv.org/abs/2505.10182}{継続事前学習}、\href{https://arxiv.org/abs/2605.15221}{アルゴリズム発見}
+\end{indented}
+
+\entry{特定研究員}
+\begin{indented}
+京都大学（京都）\\
+2023年4月 -- 2024年3月\\
+研究テーマ：\href{https://arxiv.org/abs/2309.11852}{知識編集}、\href{https://arxiv.org/abs/2404.02183}{LLMエージェント}、\href{https://arxiv.org/abs/2309.11852}{ファインチューニング}
+\end{indented}
+
+\entry{研究インターン（客員研究学生）}
+\begin{indented}
+受入教員：\href{https://danushka.net/}{Danushka Bollegala} 教授\\
+リバプール大学 計算機科学科 自然言語処理グループ\\
+（英国 リバプール）\\
+2022年2月 -- 2022年7月\\
+研究テーマ：\href{https://arxiv.org/abs/2302.05619}{プロンプト学習}
+\end{indented}
+
+\entry{リサーチアシスタント（RA）}
+\begin{indented}
+\href{https://ahcweb01.naist.jp/Prof.Nakamura/index_e.html}{中村 哲} 教授\\
+奈良先端科学技術大学院大学（奈良）\\
+2020年4月 -- 2023年3月
+\end{indented}
+
+\entry{研究員}
+\begin{indented}
+奈良先端科学技術大学院大学（奈良）\\
+2019年10月 -- 2023年3月\\
+研究テーマ：\href{https://arxiv.org/abs/2210.13034}{単語埋め込み}
+\end{indented}
+
+% ---------- Teaching ----------
+\cvsection{教育歴}%
+\textbf{ティーチングアシスタント（TA）}　奈良先端科学技術大学院大学
+\begin{indented}
+系列データモデリング（2019年度 秋学期）\\
+データ工学（2019年度 秋学期）\\
+機械学習（2019年度 春学期）
+\end{indented}
+
+\vspace{6pt}
+\textbf{ティーチングアシスタント（TA）}　京都産業大学
+\begin{indented}
+マルチメディア符号化（2017年度 秋学期）
+\end{indented}
+
+% ---------- Research Papers ----------
+\cvsection{研究論文}%
+\paperfirst{Taro Yano, \textbf{Yoichi Ishibashi}, Masafumi Oyamada.}
+{Tail Competition Explains Scaling in Best-of-N Sampling for Verifiable Problems}
+{In Advances in Neural Information Processing Systems (\textbf{NeurIPS 2026}), 2026.}
+
+\paper{\textbf{Yoichi Ishibashi}, Taro Yano, Masafumi Oyamada.}
+{\href{https://arxiv.org/abs/2605.15221}{Effective Harness Engineering for Algorithm Discovery with Coding Agents}}
+{In ICML 2026 AI for Science Workshop (\textbf{ICML 2026 Workshop}), 2026.}
+
+\paper{Haowen Li, \textbf{Yoichi Ishibashi}, Masafumi Oyamada.}
+{Evaluating the Impact of Reviewer Guideline Design on LLM-Based Automated Peer Review}
+{In Findings of the Association for Computational Linguistics (\textbf{ACL 2026 Findings}), 2026.}
+
+\paper{Taro Yano, \textbf{Yoichi Ishibashi}, Masafumi Oyamada.}
+{\href{https://arxiv.org/abs/2505.21963}{LaMDAgent: An Autonomous Framework for Post-Training Pipeline Optimization via LLM Agents}}
+{In Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing (\textbf{EMNLP 2025}), November 2025.}
+
+\paper{\textbf{Yoichi Ishibashi}, Taro Yano, Masafumi Oyamada.}
+{\href{https://arxiv.org/abs/2505.10182}{Mining Hidden Thoughts from Texts: Evaluating Continual Pretraining with Synthetic Data for LLM Reasoning}}
+{Preprint, May.\ 2025.}
+
+\paper{Yunzhen He, Yusuke Takase, \textbf{Yoichi Ishibashi}, Hidetoshi Shimodaira.}
+{\href{https://arxiv.org/abs/2503.02343}{DeLTa: A Decoding Strategy based on Logit Trajectory Prediction Improves Factuality and Reasoning Ability}}
+{Proceedings of the 2nd Workshop on Uncertainty-Aware NLP (\textbf{UncertaiNLP 2025}), March.\ 2025.}
+
+\paper{\textbf{Yoichi Ishibashi}, Taro Yano, Masafumi Oyamada.}
+{\href{https://arxiv.org/abs/2410.15639}{Can Large Language Models Invent Algorithms to Improve Themselves?}}
+{In Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (\textbf{NAACL 2025}), March 2025.}
+
+\paper{\textbf{Yoichi Ishibashi}, Yoshimasa Nishimura.}
+{\href{https://arxiv.org/abs/2404.02183}{Self-Organized Agents: A LLM Multi-Agent Framework toward Ultra Large-Scale Code Generation and Optimization}}
+{Preprint, March.\ 2024.}
+
+\paper{\textbf{Yoichi Ishibashi}, Sho Yokoi, Katsuhito Sudoh, Satoshi Nakamura.}
+{\href{https://arxiv.org/abs/2210.13034}{Subspace Representations for Soft Set Operations and Sentence Similarities}}
+{In Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics (\textbf{NAACL 2024}), June 2024.}
+
+\paper{\textbf{Yoichi Ishibashi}, Hidetoshi Shimodaira.}
+{\href{https://arxiv.org/abs/2309.11852}{Knowledge Sanitization of Large Language Models}}
+{Preprint, September.\ 2023.}
+
+\paper{\textbf{Yoichi Ishibashi}, Danushka Bollegala, Katsuhito Sudoh, Satoshi Nakamura.}
+{\href{https://arxiv.org/abs/2302.05619}{Evaluating the Robustness of Discrete Prompts}}
+{In Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics (\textbf{EACL 2023}), May 2023.}
+
+\paper{Kosuke Takahashi, \textbf{Yoichi Ishibashi}, Katsuhito Sudoh, Satoshi Nakamura.}
+{\href{http://www.statmt.org/wmt21/pdf/2021.wmt-1.113.pdf}{Multilingual Machine Translation Evaluation Metrics Fine-tuned on Pseudo-Negative Examples for WMT 2021 Metrics Task}}
+{In Proceedings of the Sixth Conference on Machine Translation (\textbf{WMT 2021}), 1031 - 1034, November 2021.}
+
+\paper{\textbf{Yoichi Ishibashi}, Katsuhito Sudoh, Koichiro Yoshino, Satoshi Nakamura.}
+{\href{https://www.jstage.jst.go.jp/article/jnlp/28/1/28_206/_article/-char/en}{Reflection-based Word Attribute Transfer.}}
+{In Journal of Natural Language Processing, vol.28, no.1, March 2021.}
+
+\paper{\textbf{Yoichi Ishibashi}, Katsuhito Sudoh, Koichiro Yoshino, Satoshi Nakamura.}
+{\href{https://www.aclweb.org/anthology/2020.acl-srw.8/}{Reflection-based Word Attribute Transfer.}}
+{In Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics (\textbf{ACL 2020}): Student Research Workshop, 51 - 58, July 2020.}
+
+\paper{\textbf{Yoichi Ishibashi}, Katsuhito Sudoh, Koichiro Yoshino, Satoshi Nakamura.}
+{Reflection-based Word Attribute Transfer.}
+{Third International Workshop on Symbolic-Neural Learning (\textbf{SNL 2019}), July 2019.}
+
+\paper{\textbf{Yoichi Ishibashi}, Hisashi Miyamori.}
+{\href{https://yoichi1484.github.io/projects/shizuka/doc/INLG2019/paper/paper_final2019.pdf}{Generating Responses based on Information Visually-Induced by Text Utterance.}}
+{Technical Report, December 2017.}
+
+\paper{\textbf{Yoichi Ishibashi}, Sho Sugimoto, Hisashi Miyamori.}
+{KSU Teams Dialogue System at the NTCIR-13 Short Text Conversation Task 2.}
+{In Proceedings of the 13th \textbf{NTCIR} Conference on Evaluation of Information Access Technologies, 248 - 256, December 2017.}
+
+% ---------- Domestic Conferences ----------
+\cvsection{国内発表}%
+\paperfirst{何昀臻, 高瀬侑亮, 石橋陽一, 下平英寿}
+{\href{https://www.anlp.jp/proceedings/annual_meeting/2024/pdf_dir/P6-21.pdf}{大規模言語モデルにおける幻覚緩和のための単語確率の外挿}}
+{\upshape 言語処理学会 第30回 年次大会 (NLP 2024), リクルート賞 \textbf{(1/599)}}
+
+\paper{石橋 陽一, 横井 祥, 須藤 克仁, 中村 哲}
+{\href{https://www.anlp.jp/proceedings/annual_meeting/2023/pdf_dir/C4-1.pdf}{正準角および部分空間に基づく BERTScore の拡張}}
+{\upshape 言語処理学会 第29回 年次大会 (NLP 2023)}
+
+\paper{石橋 陽一, 横井 祥, 須藤 克仁, 中村 哲}
+{\href{https://www.jstage.jst.go.jp/article/pjsai/JSAI2022/0/JSAI2022_1P4GS602/_article/-char/en}{学習済み埋め込み空間の線型部分空間を用いた集合演算}}
+{\upshape 第36回 人工知能学会全国大会 (JSAI2022)}
+
+\paper{石橋 陽一, 横井 祥, 須藤 克仁, 中村 哲}
+{\href{https://www.anlp.jp/proceedings/annual_meeting/2022/pdf_dir/PH2-8.pdf}{線型部分空間に基づく学習済み単語埋込空間上の集合演算}}
+{\upshape 言語処理学会 第28回 年次大会 (NLP 2022), 若手奨励賞 \textbf{(12/280)}}
+
+\paper{高橋 洸丞, 石橋 陽一, 須藤 克仁, 中村 哲}
+{\href{https://www.anlp.jp/proceedings/annual_meeting/2022/pdf_dir/G3-2.pdf}{単語属性変換で作成した疑似負例データを用いた自動機械翻訳評価}}
+{\upshape 言語処理学会第28回年次大会 (NLP 2022)}
+
+\paper{石橋 陽一, 横井 祥, 須藤 克仁, 中村 哲}
+{学習済み埋め込み空間における集合演算}
+{\upshape 第24回 情報論的学習理論ワークショップ (IBIS 2021)}
+
+\paper{石橋 陽一, 横井 祥, 須藤 克仁, 中村 哲}
+{量子論理に基づく単語埋込集合間の論理演算}
+{\upshape NLP若手の会 第16回 シンポジウム (YANS 2021)}
+
+\paper{石橋 陽一, 須藤 克仁, 中村 哲}
+{\href{https://www.anlp.jp/proceedings/annual_meeting/2021/pdf_dir/P4-13.pdf}{単語属性変換による自然言語推論データの拡張}}
+{\upshape 言語処理学会 第27回 年次大会 (NLP 2021)}
+
+\paper{石橋 陽一, 須藤 克仁, 吉野 幸一郎, 中村 哲}
+{\href{https://www.anlp.jp/proceedings/annual_meeting/2020/pdf_dir/P6-2.pdf}{鏡映変換に基づく埋め込み空間上の単語属性変換}}
+{\upshape 言語処理学会 第26回 年次大会 (NLP 2020), 優秀賞 \textbf{(6/396)}}
+
+\paper{石橋 陽一, 須藤 克仁, 吉野 幸一郎, 中村 哲}
+{鏡映変換に基づく埋め込み空間上の単語属性変換}
+{\upshape NLP若手の会 第13回 シンポジウム (YANS 2019), 奨励賞 \textbf{(7/93)}}
+
+\paper{石橋 陽一, 須藤 克仁, 吉野 幸一郎, 中村 哲}
+{鏡映変換に基づく埋め込み空間上の単語属性変換}
+{\upshape 情報処理学会 第241回 自然言語処理研究会, 優秀研究賞 \textbf{(3/28)}}
+
+\paper{石橋 陽一, 森 泰, 木村 輔, 宮森 恒}
+{\href{https://www.anlp.jp/proceedings/annual_meeting/2019/pdf_dir/D3-4.pdf}{質問文から連想した画像特徴量を用いた質問応答モデル}}
+{\upshape 言語処理学会 第25回 年次大会 (NLP 2019)}
+
+\paper{杉本 翔, 石橋 陽一, 宮森 恒}
+{\href{https://db-event.jpn.org/deim2018/data/papers/347.pdf}{ペルソナベクトルの演算に応じた新たな個性での対話応答文生成}}
+{\upshape 第10回 データ工学と情報マネジメントに関するフォーラム (DEIM 2018)}
+
+\paper{石橋 陽一, 宮森 恒}
+{\href{https://db-event.jpn.org/deim2018/data/papers/159.pdf}{連想対話モデル : 発話文から連想した視覚情報を用いた応答文生成}}
+{\upshape 第10回 データ工学と情報マネジメントに関するフォーラム (DEIM 2018)}
+
+% ---------- Awards ----------
+\cvsection{受賞・\\研究助成}%
+\entryfirst{リクルート賞（NLP 2024）}
+\awardline{言語処理学会 第30回年次大会（599件中1件）\\ 2024年}
+
+\entry{若手奨励賞（NLP 2022）}
+\awardline{言語処理学会 第28回年次大会（280名中12名）\\ 2022年}
+
+\entry{NAIST研究助成}
+\awardline{奈良先端科学技術大学院大学支援財団\\ 100万円／年\\ 2021年 -- 2022年}
+
+\entry{優秀賞（NLP 2020）}
+\awardline{言語処理学会 第26回年次大会（396件中6件）\\ 2020年}
+
+\entry{奨励賞（YANS 2019）}
+\awardline{NLP若手の会 第14回シンポジウム（93件中7件）\\ 2019年}
+
+\entry{優秀研究賞（IPSJ NL241）}
+\awardline{情報処理学会 第241回自然言語処理研究会（28件中3件）\\ 2019年}
+
+\entry{学長賞}
+\awardline{京都産業大学\\ 学部首席\\ 2018年}
+
+\entry{むすびわざ奨学金}
+\awardline{京都産業大学\\ 授業料免除\\ 2015年 -- 2016年、2018年}
+
+\entry{20周年記念特別賞}
+\awardline{科学技術のアイデアコンテスト「テクノ愛」\\ 2016年}
+
+\entry{奨励賞}
+\awardline{科学技術のアイデアコンテスト「テクノ愛」\\ 2016年}
+
+% ---------- Research Projects ----------
+\cvsection{研究プロジェクト}%
+\entryfirst{人工触覚（Artificial Tactile）}
+\begin{indented}
+2016年 夏\\[3pt]
+圧力センサと畳み込みニューラルネットワークを用いた人工触覚デバイスの開発\\
+\textbf{デモ動画：}\url{https://youtu.be/n8lJgM3Qd-I}\\[3pt]
+\textbf{プロジェクトページ：}\url{https://yoichi1484.github.io/about/}\\[3pt]
+\textbf{20周年記念特別賞}、科学技術のアイデアコンテスト「テクノ愛」、2016年\\[3pt]
+\textbf{奨励賞}、科学技術のアイデアコンテスト「テクノ愛」、2016年
+\end{indented}
+
+\end{document}
