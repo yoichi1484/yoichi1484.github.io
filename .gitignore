@@ -19,3 +19,4 @@ cv/*.fls
 cv/*.fdb_latexmk
 cv/*.synctex.gz
 cv/cv.pdf
+cv/cv-ja.pdf
